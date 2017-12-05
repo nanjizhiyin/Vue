@@ -1,19 +1,21 @@
 <template>
-  <div class="hello">
+  <div class="XPFirst">
     <h1>{{ msg }}</h1>
-    <ul>
-      <li><a href="http://www.imxuexin.cn/" target="_blank">学信</a></li>
-    </ul>
-    <div>hello Gjd</div>
+    <div>Index</div>
+    <br />
+    <router-link to="/first/">FirstIndex</router-link>
+    <router-link to="/first/helloworld/">HelloWorld</router-link>
+    <router-link to="/first/xpfirst/">xpfirst</router-link>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'FirstIndex',
   data () {
     return {
-      msg: '郜金丹欢迎你'
+      msg: 'FirstIndex欢迎你'
     }
   }
 }
